@@ -1,11 +1,9 @@
 const express = require("express");
-import cookieParser from "cookie-parser";
 import { middleWare } from "./Middleware/middleware";
 
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.use(cookieParser());
 app.use(express.json());
 app.use(middleWare());
 
