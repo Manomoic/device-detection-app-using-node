@@ -2,7 +2,7 @@ import DeviceDetector from "device-detector-js";
 import { normalizeDeviceInfo } from "../Utilities/Utils";
 const deviceDetector = new DeviceDetector();
 
-module.exports = function () {
+export const middleWare = () => {
   return function (req: Request | any, res: Response, next: () => void) {
     const userAgent = req.headers["user-agent"];
 
