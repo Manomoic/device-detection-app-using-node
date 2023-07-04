@@ -3,7 +3,7 @@ import { normalizeDeviceInfo } from "../Utilities/Utils";
 const deviceDetector = new DeviceDetector();
 
 export const middleWare = () => {
-  return function (req: Request | any, res: Response, next: () => void) {
+  return function (req: Request | any, res: any, next: () => void) {
     const userAgent = req.headers["user-agent"];
 
     if (typeof userAgent === "string" && userAgent) {

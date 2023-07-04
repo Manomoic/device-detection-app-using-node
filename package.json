@@ -1,6 +1,6 @@
 {
   "name": "device-detection-app",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "",
   "main": "src/app.ts",
   "scripts": {
@@ -17,6 +17,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
     "jest": "^29.5.0",
     "nodemon": "^2.0.22",
